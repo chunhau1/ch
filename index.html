@@ -3,130 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>[Your Brand Name]</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
-        .carousel-inner img {
+        header, footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+        .product {
+            margin: 20px 0;
+        }
+        .product img {
             width: 100%;
+            max-width: 300px;
             height: auto;
         }
-        .comment-section {
-            margin-top: 50px;
+        .product h3 {
+            font-size: 1.5em;
+        }
+        .product p {
+            font-size: 1.2em;
+        }
+        .product button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">个ch人主页</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">介绍</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">联系方式</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#food-gallery">美食集</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#graduation">毕业感言</a>
-                    </li>
-                </ul>
-            </div>
+    <header>
+        <h1>[Your Brand Name]</h1>
+    </header>
+    
+    <main>
+        <h2>Discover the Perfect Shirt</h2>
+        <p>Elevate your wardrobe with our premium shirts, designed for comfort and style.</p>
+        
+        <div class="product">
+            <img src="[image-url-1]" alt="Classic White Shirt">
+            <h3>Classic White Shirt</h3>
+            <p>Price: $29.99</p>
+            <p>Our classic white shirt is a must-have for any wardrobe. Versatile, stylish, and comfortable.</p>
+            <button>Add to Cart</button>
         </div>
-    </nav>
-
-    <!-- 介绍 -->
-    <section id="about" class="container my-5">
-        <h2 class="text-center">介绍</h2>
-        <p>欢迎来到我的个人主页！我是一个美食爱好者，喜欢探索世界各地的美味佳肴。在这个网站上，你可以找到我最喜欢的美食以及一些关于我的信息。</p>
-    </section>
-
-    <!-- 美食集 -->
-    <section id="food-gallery" class="container my-5">
-        <h2 class="text-center">美食集</h2>
-        <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/chbiye.jpg" class="d-block w-100" alt="Food 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="path/to/food2.jpg" class="d-block w-100" alt="Food 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="path/to/food3.jpg" class="d-block w-100" alt="Food 3">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        
+        <div class="product">
+            <img src="[image-url-2]" alt="Casual Blue Shirt">
+            <h3>Casual Blue Shirt</h3>
+            <p>Price: $34.99</p>
+            <p>Perfect for a relaxed day out, our casual blue shirt combines style and comfort effortlessly.</p>
+            <button>Add to Cart</button>
         </div>
-    </section>
-
-    <!-- 联系方式 -->
-    <section id="contact" class="container my-5">
-        <h2 class="text-center">联系方式</h2>
-        <p class="text-center">你可以通过以下方式联系我：</p>
-        <ul class="list-group">
-            <li class="list-group-item">电子邮件：<a href="mailto:your-email@example.com">your-email@example.com</a></li>
-            <li class="list-group-item">电话：18658178117</li>
-            <li class="list-group-item">地址：浙江大学某某城市，某某街道，12345</li>
-        </ul>
-    </section>
-
-    <!-- 毕业感言 -->
-    <section id="graduation" class="container my-5">
-        <h2 class="text-center">毕业感言</h2>
-        <p>亲爱的浙江大学，四年的时光如诗如画，每一页都写满了我们的青春故事。今天，我们要告别这片美丽的校园，带着梦想与激情，迈向新的未来。</p>
-        <p>感谢敬爱的老师们，你们是我们航行中的灯塔，指引我们前行的方向。感谢亲爱的家人，你们的支持与包容是我们最坚实的后盾。感谢可爱的同学们，我们一起经历了风雨，共同分享了阳光，四年的相伴将成为我们一生的珍贵记忆。</p>
-        <p>毕业，不是结束，而是新的开始。就像长城脚下的石阶，每一步都通向更高的远方。让我们怀揣梦想，勇敢追梦，书写属于我们的辉煌篇章。</p>
-        <p>愿我们在未来的日子里，继续努力，不负韶华，前程似锦，梦想成真！</p>
-        <p>谢谢大家！</p>
-    </section>
-
-    <!-- 评论区 -->
-    <section id="comments" class="container my-5">
-        <h2 class="text-center">评论区</h2>
-        <div class="comment-section">
-            <div id="commentList" class="mb-4">
-                <!-- 评论将出现在这里 -->
-            </div>
-            <div class="input-group mb-3">
-                <input type="text" id="commentInput" class="form-control" placeholder="写下你的评论">
-                <button class="btn btn-primary" type="button" id="addCommentBtn">发表评论</button>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('addCommentBtn').addEventListener('click', function() {
-            const commentInput = document.getElementById('commentInput');
-            const commentText = commentInput.value.trim();
-            if (commentText) {
-                const commentList = document.getElementById('commentList');
-                const newComment = document.createElement('div');
-                newComment.className = 'card mb-2';
-                newComment.innerHTML = `<div class="card-body">${commentText}</div>`;
-                commentList.appendChild(newComment);
-                commentInput.value = '';
-            }
-        });
-    </script>
+        
+        <!-- Add more products as needed -->
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 [Your Brand Name]. All rights reserved.</p>
+    </footer>
 </body>
 </html>
